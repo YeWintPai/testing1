@@ -1,0 +1,115 @@
+@import url('https://fonts.cdnfonts.com/css/barbie');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 2000px;
+    background-color: white;
+}
+
+/* custom scrollbar  */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: beige ;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #d4729280 ;
+    border-radius: 5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: beige;
+}
+
+#menuButtons a{
+    position: relative;
+}
+
+#menuButtons a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    bottom: 4px;
+    left: 11px;
+    transition: 1s;
+}
+
+#menuButtons a:hover::after, 
+#menuButtons .active::after{
+    width: 80%;  
+}
+
+#rowDiv {
+    padding-top: 10px;
+}
+
+#nav-bar h1 {
+    font-family: 'Barbie', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-stretch: ultra-expanded;
+    margin-left: 48px;
+}
+
+
+
+.carousel {
+    margin-top: 78px;
+    /* width: 100vw; */
+    /* height: 400px; */
+    /* object-fit: cover; */
+} 
+.carousel .carousel-item {
+    background-color: #d8709380 ;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item img {
+    margin-top: 10px;
+    scale: 0.98;
+    width: 100vw;
+    height: 380px;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
+  mask-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
+}
+
+.col-6 .mt-2 a {
+    font-size: large;
+    
+}
+
+#nav-bar {
+    overflow: hidden;
+    /* position: fixed;
+    top: 0;
+    z-index: 10; */
+    background-image: url('./Images/pinkLandscape2.webp');
+}
+
+#containerForRows .row img {
+    width: 150px;
+    height: 150px;
+    transition: transform .2s;
+}
+
+#containerForRows img:hover{
+    transform: scale(1.1);
+    filter: brightness(1);
+
+}
+
+/* Responsive */
+
+/* Footer Responsive */
+@media (max-width: 970px) {
+    .footer col-6 .d-flex p{
+        font-size:20px;
+    }
+}

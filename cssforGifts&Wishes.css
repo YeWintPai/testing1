@@ -1,0 +1,149 @@
+@import url('https://fonts.cdnfonts.com/css/barbie');
+@import url(https://db.onlinewebfonts.com/c/9eaccbbc386fe2cbac8bbf78836d0e87?family=Kamerik+105+Cyrillic+W01+Thin);
+@import url(https://db.onlinewebfonts.com/c/985c0eae9f5ab07fc12081d0ddf6b23c?family=FSP+DEMO+-+Izmir-Regular);
+#nav-bar h1 {
+    font-family: 'Barbie', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-stretch: ultra-expanded;
+    margin-left: 48px;
+}
+
+/* custom scrollbar  */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: beige ;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #d4729280 ;
+    border-radius: 5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: beige;
+}
+
+#menuButtons a{
+    position: relative;
+}
+
+#menuButtons a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    bottom: 4px;
+    left: 11px;
+    transition: 1s;
+}
+
+#menuButtons a:hover::after, 
+#menuButtons .active::after{
+    width: 80%;  
+}
+
+body, html {
+    height: 100%;
+}
+#parallexBand7 {
+    background-image: url(./Images/Band7.png);
+
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Text 1 Parallex Starts */
+#parallexText-1 h3{
+    font-family: "Kamerik 105 W00 Bold";
+}
+#parallexText-1 {
+    padding-top: 30px;
+    height: 240px;background-color: rgb(184, 174, 174);
+    font-family: "FSP DEMO - Izmir-Regular";
+    font-size: 20px;
+}
+/* Text 1 Parallex CLose */
+
+/* Text 2 Parallex Starts  */
+#parallexBooknErasers {
+    background-image: url(./Images/IMG_1825.JPG);
+
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallexText-2 h3{
+    font-family: "Kamerik 105 W00 Bold";
+}
+#parallexText-2 {
+    padding-top: 30px;
+    height: 200px;background-color:beige;
+    font-family: "FSP DEMO - Izmir-Regular";
+    font-size: 20px;
+}
+/* Text 2 Parallex Close  */
+
+/* Text 3 Parallex Starts  */
+#parallexTNK {
+    background-image: url(./Images/ShwePyiNanRose.jpeg);
+
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallexText-3 h3{
+    font-family: "Kamerik 105 W00 Bold";
+}
+#parallexText-3 {
+    padding-top: 30px;
+    height: 200px;background-color:white;
+    font-family: "FSP DEMO - Izmir-Regular";
+    font-size: 20px;
+}
+
+#parallexLove {
+    background-image: url(./Images/heartsignwithlove.jpeg);
+    height: 100%;
+
+     /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.captionBox {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+#border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
